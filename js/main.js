@@ -44,7 +44,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0317';
@@ -62,20 +63,21 @@ const AUDIO_DETAIL = [
             ],
             English: [
                 "...What are you doing in a place like this?",
-                "And to think I've been looking all over for you, Sensei."
+                "I've been looking for you for so long..."
             ],
             Chinese: [
-                "…您在这里做什么？",
-                "我可是一直在找您…"
+                "……您在这种地方，做什么呢？",
+                "嗯……我一直在找老师呢……"
             ],
             TraditionalChinese: [
-                "…您在這裡做什麼？",
-                "我可是一直在找您…"
+                "……你在這種地方，做什麼呢？",
+                "明明我一直在找老師的說……"
             ],
             Korean: [
-                "이런 곳에서 뭐하는 거야?",
-                "그리고 내가 널 찾아다니는 걸 생각해봐"
-            ]
+                "……이런 곳에서, 무엇을 하고 계신 건가요?",
+                "계속 선생님을 찾고 있었는데……"
+            ],
+            Thai: ["มาทำอะไร อยู่ในที่แบบนี้เหรอคะ...?","ฉันตามหาคุณครู อยู่นานเลยนะ..."]
         }
     },
     {
@@ -85,21 +87,22 @@ const AUDIO_DETAIL = [
                 "もしかして、あまり体調が良くないのですか……？"
             ],
             English: [
-                "You've seemed to be in some distress for a little while now.",
-                "Is it possible you're not feeling well?"
+                "And you've been groaning to yourself...",
+                "Could it be that you're not feeling well...? "
             ],
             Chinese: [
-                "您的脸色不太好呢…",
-                "难道说是身体抱恙吗…？"
+                "而且从刚才就一直在哼哼唧唧的……",
+                "难道是，身体不太舒服吗……？"
             ],
             TraditionalChinese: [
-                "您的臉色不太好呢…",
-                "難道說是身體抱恙嗎…？"
+                "你從剛才看起來就有點痛苦……",
+                "難道是身體不舒服嗎……？"
             ],
             Korean: [
-                "잠시 동안 곤경에 처해 있는 것 같았어",
-                "기분이 안 좋아진 게 가능할까요?"
-            ]
+                "또 아까부터 계속 끙끙거리시고…….",
+                "저기 혹시, 몸 상태가 별로 안 좋으신가요……? "
+            ],
+            Thai: ["เห็นร้องโอดโอย อยู่ตั้งแต่เมื่อกี้แล้ว...","รู้สึกไม่ค่อยสบาย ตรงไหนหรือเปล่าคะ...? "]
         }
     },
     {
@@ -109,21 +112,22 @@ const AUDIO_DETAIL = [
                 "きっと、罰が当たったんですよ。"
             ],
             English: [
-                "I see. A nightmare?",
-                "It must be divine punishment, I'm sure."
+                "Hmm, a nightmare.",
+                "I'm sure this is your punishment."
             ],
             Chinese: [
-                "原来如此，做噩梦吗…",
-                "这一定是惩罚。"
+                "唔，是噩梦吗？",
+                "那一定是，遭报应了吧。"
             ],
             TraditionalChinese: [
-                "原來如此，做噩夢嗎…",
-                "這一定是懲罰。"
+                "原來如此，是惡夢啊……",
+                "肯定是遭到報應了吧。"
             ],
             Korean: [
-                "알겠어, 악몽이야?",
-                "그것은 신성한 징벌이 될 것 같습니다."
-            ]
+                "흐음, 악몽인가요.",
+                "분명, 벌을 받은 거예요."
+            ],
+            Thai: ["อย่างนี้นี่เอง ฝันร้ายเหรอคะ?","ต้องเป็นการถูกลงโทษแน่ๆ ค่ะ"]
         }
     },
     {
@@ -133,21 +137,22 @@ const AUDIO_DETAIL = [
                 "一度も、私に連絡しなかったから。"
             ],
             English: [
-                "It's because you've been visiting the Wild Hunt so often lately,",
-                "and yet you never once contacted me."
+                "You've been coming to Wildhunt so often...",
+                "Yet you've never once called me."
             ],
             Chinese: [
-                "明明最近您经常来狂猎…",
-                "却一次也没和我联络过。"
+                "您最近明明经常来狂猎……",
+                "却一次都没找过我呢。"
             ],
             TraditionalChinese: [
-                "明明最近您經常來狂獵…",
-                "卻一次也沒和我聯絡過。"
+                "明明最近經常來狂獵……",
+                "卻連一次都沒有聯絡我。"
             ],
             Korean: [
-                "왜냐하면 최근 야생 사냥을 자주 방문했기 때문입니다",
-                "그런데도 한 번도 연락하지 않았어"
-            ]
+                "최근 자주 와일드헌트에 오셨으면서도…….",
+                "한 번도 저한테 연락 주지 않으셨잖아요."
+            ],
+            Thai: ["ก็หมู่นี้มาที่ไวลด์ฮันต์ อยู่บ่อยๆ...","แต่ไม่เคยติดต่อ มาหาฉันสักครั้งเลยนี่คะ"]
         }
     },
     {
@@ -157,21 +162,22 @@ const AUDIO_DETAIL = [
                 "でも、こうやって先生にお会いできて……私、嬉しいです。"
             ],
             English: [
-                "Ufufu, I'm only joking, of course.",
-                "But, being able to meet with you like this, Sensei... it truly makes me happy."
+                "...Fufu, I'm joking.",
+                "But still, meeting you like this...makes me happy, Sensei."
             ],
             Chinese: [
-                "…呵呵，开玩笑啦。",
-                "不过，能和老师见面…我真的很高兴。"
+                "……呵呵，开玩笑的啦。",
+                "不过，能像这样见到老师……我其实，也很高兴。"
             ],
             TraditionalChinese: [
-                "…呵呵，開玩笑啦。",
-                "不過，能和老師見面…我真的很高興。"
+                "……呵呵，開玩笑的。",
+                "不過，能像這樣見到老師……我很開心。"
             ],
             Korean: [
-                "우푸이, 농담만 하고 있어",
-                "하지만 이렇게 만나면 정말 행복해집니다"
-            ]
+                "……후후, 농담이에요.",
+                "그래도, 이렇게 선생님과 만날 수 있어서…… 저, 기뻐요."
+            ],
+            Thai: ["ฮุฮุ... ล้อเล่นค่ะ","แต่พอได้เจอ กับคุณครูแบบนี้... ฉันก็ดีใจนะคะ"]
         }
     }
 ];
@@ -283,7 +289,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -453,6 +459,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -466,6 +482,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -475,7 +493,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
